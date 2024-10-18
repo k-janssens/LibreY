@@ -104,11 +104,6 @@ a:hover,
     border-radius: 25px;
 }
 
-.search-container input {
-    background: url(static/images/search.png) no-repeat scroll 7px 7px;
-    padding-left:30px;
-}
-
 .search-button-wrapper button,
 .misc-container button,
 .misc-container select {
