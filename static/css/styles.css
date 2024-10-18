@@ -31,9 +31,34 @@ html {
     font-size: 16px;
 }
 
-.google-logo {
+.google-logo-g1 {
     font-size: 72px;
     color: #4285F4;
+}
+
+.google-logo-o1 {
+    font-size: 72px;
+    color: #EA4335;
+}
+
+.google-logo-o2 {
+    font-size: 72px;
+    color: #FBBC05;
+}
+
+.google-logo-g2 {
+    font-size: 72px;
+    color: #4285F4;
+}
+
+.google-logo-l {
+    font-size: 72px;
+    color: #34A853;
+}
+
+.google-logo-e {
+    font-size: 72px;
+    color: #EA4335;
 }
 
 body {

@@ -33,7 +33,7 @@
 </head>
     <body>
         <form class="sub-search-container" method="get" autocomplete="off">
-            <h1 class="logomobile"><a class="no-decoration" href="./">Google</a></h1>
+            <h1 class="logomobile"><a class="no-decoration" href="./"><span class="google-logo-g1">G</span><span class="google-logo-01">o</span><span class="google-logo-02">o</span><span class="google-logo-g2">g</span><span class="google-logo-l">l</span><span class="google-logo-e">e</span></a></h1>
             <input type="text" name="q"
                 <?php
                     if (1 > strlen($opts->query) || strlen($opts->query) > 256)
