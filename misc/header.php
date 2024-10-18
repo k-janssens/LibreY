@@ -11,4 +11,3 @@
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="static/css/google.css">
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

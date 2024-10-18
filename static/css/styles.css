@@ -60,10 +60,13 @@ a,
 }
 
 .text-result-wrapper a:visited h2,
-.special-result-container a,
+.special-result-container a {
+    color: #140DAB;
+}
+
 .sub-search-button-wrapper a,
 .sub-search-button-wrapper a:visited {
-    color: #140DAB;
+    color: #1a1a1a;
 }
 
 .did-you-mean a {
@@ -126,12 +129,11 @@ a:hover,
 }
 
 .search-button-wrapper button {
-
     margin: 30px 60px 0px 60px;
 }
 
 .sub-search-container {
-    background-color: var(--search-form-background-color);
+    background-color: #d4d4d4;
     width: 100%;
     border-bottom: 1px solid var(--border);
 }
