@@ -33,11 +33,11 @@ a,
 .did-you-mean a,
 .sub-search-button-wrapper a,
 .sub-search-button-wrapper a:visited {
-    color: #bd93f9;
+    color: #70757;
 }
 
 .sub-search-button-wrapper .active {
-    border-bottom: 2px #bd93f9 solid;
+    border-bottom: 2px #70757a solid;
     padding-bottom: 10px;
 }
 
@@ -326,7 +326,7 @@ a[title] {
 }
 
 .Y {
-    color: #bd93f9;
+    color: #70757a;
 }
 
 .seeders {

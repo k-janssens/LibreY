@@ -33,7 +33,7 @@
 </head>
     <body>
         <form class="sub-search-container" method="get" autocomplete="off">
-            <h1 class="logomobile"><a class="no-decoration" href="./">Libre<span class="Y">Y</span></a></h1>
+            <h1 class="logomobile"><a class="no-decoration" href="./">Google</a></h1>
             <input type="text" name="q"
                 <?php
                     if (1 > strlen($opts->query) || strlen($opts->query) > 256)
@@ -53,7 +53,7 @@
             <input type="hidden" name="p" value="0">
             <div class="sub-search-button-wrapper">
                 <?php
-                    $categories = array("general", "images", "videos", "torrents", "tor", "maps");
+                    $categories = array("general", "images", "videos");
 
                     foreach ($categories as $category)
                     {
