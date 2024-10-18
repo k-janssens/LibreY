@@ -98,7 +98,7 @@ a:hover,
     color: var(--search-container-text-color);
     background-color: var(--search-container-background-color);
     padding: 10px;
-    padding-left: 30px;
+    padding-left: 50px;
     font-size: inherit;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
@@ -109,8 +109,9 @@ a:hover,
 
 .search-container .icon {
     position: absolute;
-    top: 50%;
-    left: 10px;
+    height: 32px;
+    padding-left: 10px;
+    padding-top: 11px;
 }
 
 .search-button-wrapper button,
