@@ -2,3 +2,4 @@
 /opensearch.xml
 /nginx_logs
 /php_logs
+docker-compose.yaml
