@@ -108,6 +108,11 @@ a:hover,
 
 .search-container .icon {
     background: url("/static/images/search.png") no-repeat left;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
 }
 
 .search-button-wrapper button,
