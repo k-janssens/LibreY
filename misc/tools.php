@@ -107,7 +107,7 @@
     function print_elapsed_time($start_time, $results, $opts) {
             $source = "";
             if (array_key_exists("results_source", $results)) {
-                $source = " from " . $results["results_source"];
+                //$source = " from " . $results["results_source"];
                 unset($results["results_source"]);
             }
 
