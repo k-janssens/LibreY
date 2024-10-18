@@ -35,6 +35,7 @@
 
                 foreach($results as $result)
                 {
+                    print_r($result);
                     if (!$result 
                         || !array_key_exists("url", $result)
                         || !array_key_exists("alt", $result))
