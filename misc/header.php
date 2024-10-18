@@ -10,7 +10,5 @@
         <meta name="referrer" content="no-referrer"/>
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
-        <link rel="stylesheet" type="text/css" href="<?php
-$theme = $_REQUEST["theme"] ?? trim(htmlspecialchars($_COOKIE["theme"] ?? $GLOBALS["opts"]->default_theme ?? "dark"));
-                echo "static/css/" . $theme . ".css";
+        <link rel="stylesheet" href="google.css">
         ?>"/>
