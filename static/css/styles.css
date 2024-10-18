@@ -36,8 +36,8 @@ a,
 }
 
 .did-you-mean a {
-    color: #cb119f;
-    font-size: 24px;
+    color: #cb119f !important;
+    font-size: 24px !important;
 }
 
 
