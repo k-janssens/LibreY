@@ -104,7 +104,7 @@ a:hover,
     font-size: inherit;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
-    border-radius: 50px;
+    border-radius: 30px;
     height: 35px;
     box-shadow: 0 0 20px lightgrey;
 }
@@ -118,7 +118,7 @@ a:hover,
     font-size: inherit;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
-    border-radius: 50px;
+    border-radius: 30px;
     height: 35px;
     box-shadow: 0 0 20px #ffffff;
 }
