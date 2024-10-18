@@ -98,11 +98,13 @@ a:hover,
     color: var(--search-container-text-color);
     background-color: var(--search-container-background-color);
     padding: 10px;
+    padding-left: 30px;
     font-size: inherit;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
     border-radius: 50px;
     height: 35px;
+    background: url("/static/images/search.png") no-repeat left;
 }
 
 .search-button-wrapper button,
