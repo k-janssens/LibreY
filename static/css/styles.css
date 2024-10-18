@@ -100,10 +100,9 @@ a:hover,
     padding: 10px;
     font-size: inherit;
     font-family: sans-serif;
-    border: 1px solid var(--search-container-background-border);
-    border-radius: 25px;
-    background: url(static/images/search.png) no-repeat scroll 7px 7px;
-    padding-left:30px;
+    border: 0px solid var(--search-container-background-border);
+    border-radius: 50px;
+    height: 35px;
 }
 
 .search-button-wrapper button,
