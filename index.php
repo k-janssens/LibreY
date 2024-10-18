@@ -5,7 +5,14 @@
     </head>
     <body>
         <form class="search-container" action="search.php" method="get" autocomplete="off">
-                <h1><span style="color: #4285F4 !important;">G</span><span  style="color: #EA4335;">o</span><span  style="color: #FBBC05;">o</span><span  style="color: #4285F4;">g</span><span  style="color: #34A853;">l</span><span  style="color: #EA4335;"">e</span></h1>
+                <h1>
+                    <span style="color: '#4285F4';">G</span>
+                    <span  style="color: #EA4335;">o</span>
+                    <span  style="color: #FBBC05;">o</span>
+                    <span  style="color: #4285F4;">g</span>
+                    <span  style="color: #34A853;">l</span>
+                    <span  style="color: #EA4335;"">e</span>
+                </h1>
                 <input type="text" name="q" autofocus/>
                 <input type="hidden" name="p" value="0"/>
                 <input type="hidden" name="t" value="0"/>
