@@ -176,8 +176,8 @@
 
                 echo "<div class=\"text-result-wrapper\">";
                 echo "<a rel=\"noreferer noopener\"  href=\"$url\">";
-                echo "$base_url";
                 echo "<h2>$title</h2>";
+                echo "$base_url";
                 echo "</a>";
                 echo "<span>$description</span>";
                 echo "</div>";
