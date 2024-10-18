@@ -344,10 +344,14 @@ a[title] {
 
 .image-result-container img {
     margin: 0px;
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+.image-result-container p {
+    font-size: 12px;
 }
 
 
