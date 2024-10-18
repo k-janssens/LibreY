@@ -96,7 +96,7 @@ a:hover,
 .sub-search-container input {
     width: 500px;
     color: var(--search-container-text-color);
-    background-color: var(--search-container-background-color);
+    background-color: #ffffff;
     padding: 10px;
     padding-left: 50px;
     font-size: inherit;
