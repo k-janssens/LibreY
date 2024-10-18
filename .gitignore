@@ -4,3 +4,5 @@
 /php_logs
 docker-compose.yaml
 /logs
+.DS_Store
+*/.DS_Store
