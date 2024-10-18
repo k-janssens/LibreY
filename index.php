@@ -17,4 +17,3 @@
                 </div>
         </form>
 
-<?php require_once "misc/footer.php"; ?>

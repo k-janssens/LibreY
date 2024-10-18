@@ -3,3 +3,4 @@
 /nginx_logs
 /php_logs
 docker-compose.yaml
+/logs
