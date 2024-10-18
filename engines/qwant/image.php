@@ -47,6 +47,7 @@
 
                     echo "<a title=\"$alt\" href=\"$url\" rel=\"noreferer noopener\" target=\"_blank\">";
                     echo "<img src=\"image_proxy.php?url=$thumbnail\">";
+                    echo "<p>$alt</p>";
                     echo "</a>";
                 }
 
