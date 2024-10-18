@@ -104,15 +104,13 @@ a:hover,
     border: 0px solid var(--search-container-background-border);
     border-radius: 50px;
     height: 35px;
+    box-shadow: 0 0 20px lightgrey;
 }
 
 .search-container .icon {
-    background: url("/static/images/search.png") no-repeat left;
     position: absolute;
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
 }
 
 .search-button-wrapper button,
