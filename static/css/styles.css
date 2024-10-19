@@ -159,14 +159,14 @@ a:hover,
     width: 580px;
     position: relative;
     left: 140px;
-    margin: 18px;
+    margin: 25px;
 }
 
 .logomobile {
     position: absolute;
     margin-top: 0px;
-    top: 25px;
-    left: 20px;
+    top: 30px;
+    left: 0px;
 }
 
 .no-decoration {
@@ -518,7 +518,7 @@ hr.small-line {
     }
 
     .logomobile {
-        position: relative;
+        position: absolute;
         float: none;
         margin-top: 0px;
         margin-bottom: 0px;
