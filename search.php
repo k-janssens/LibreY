@@ -20,15 +20,17 @@
             return;
         echo "<div class=\"next-page-button-wrapper\">";
 
-            if ($page != 0) {
+            //if ($page != 0) {
                 //print_next_page_button("&lt;&lt;", 0, $query, $type);
-                print_next_page_button($page, "Previous", $page - 10, $query, $type);
+            //    print_next_page_button($page, "Previous", $page - 10, $query, $type);
+            //}
+
+            //for ($i = $page / 10; $page / 10 + 10 > $i; $i++)
+            for ($i = 1; $i <= 10; $i++) {
+                print_next_page_button($page, $i, $query, $type);
             }
 
-            for ($i = $page / 10; $page / 10 + 10 > $i; $i++)
-                print_next_page_button($page, $i + 1, $i * 10, $query, $type);
-
-            print_next_page_button($page, "Next", $page + 10, $query, $type);
+            //print_next_page_button($page, "Next", $page + 10, $query, $type);
 
         echo "</div>";
     }
