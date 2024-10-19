@@ -9,7 +9,14 @@
             $results_language = $this->opts->language;
             $number_of_results = $this->opts->number_of_results;
 
-            $url = "https://www.google.$domain/search?q=$query_encoded&nfpr=1&start=$this->page";
+            $selected_time_option = isset($_REQUEST['time_period']) ? $_REQUEST['time_period'] : 'a';
+            
+            $time_option = "";
+            if($selected_time_option != 'a') {
+                $time_option = "&tbs=qdr:$selected_time_option";
+            }
+
+            $url = "https://www.google.$domain/search?q=$query_encoded&nfpr=1&start=$this->page" . $time_option;
 
             if (3 > strlen($results_language) && 0 < strlen($results_language)) {
                 $url .= "&lr=lang_$results_language";
