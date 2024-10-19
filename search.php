@@ -7,7 +7,7 @@
     $opts = load_opts();
 
     $time_options = ['Any time', 'Past 24 hours', 'Past week', 'Past month', 'Past year'];
-    $selected__time_option = isset($_POST['time_period']) ? $_POST['time_period'] : 'Any time';
+    $selected_time_option = isset($_POST['time_period']) ? $_POST['time_period'] : 'Any time';
     
     <form method=
     function print_page_buttons($type, $query, $page) {
@@ -86,7 +86,7 @@
                 ?>
                 <select name="time_period" id="time_period" onchange="this.form.submit()>
                 <?php foreach ($time_options as $time_option): ?>
-                    <option value="<?= $option ?>" <?= ($selected__time_option == $time_option) ? 'selected' : '' ?>>
+                    <option value="<?= $time_option ?>" <?= ($selected_time_option == $time_option) ? 'selected' : '' ?>>
                         <?= $time_option ?>
                     </option>
                 <?php endforeach; ?>
