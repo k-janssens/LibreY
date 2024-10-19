@@ -14,8 +14,8 @@
             if (!$this->url)
                 return;
 
-            if (has_cached_results($this->url))
-                return;
+            //if (has_cached_results($this->url))
+            //    return;
 
             $this->ch = curl_init($this->url);
 
