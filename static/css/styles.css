@@ -180,11 +180,12 @@ a:hover,
     border: 0px solid var(--search-container-background-border);
     border-radius: 20px;
     box-shadow: 0 0 20px lightgrey;
+    line-height: 1.5;
 }
 
 #results a,
 #results a:visited {
-    color: #140DAB;
+    color: var(--search-container-text-color);
 }
 
 .logomobile {
