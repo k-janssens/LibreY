@@ -1,7 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 function getGoogleAutocompleteSuggestions($query) {
     // Encode the query to make it URL-safe
@@ -35,8 +35,8 @@ function getGoogleAutocompleteSuggestions($query) {
         return [];
     } else {
         // Successfully decoded, print the array
-        print_r($array);
-        return $array;
+        //print_r($array);
+        return $array[0];
     }
 }
 
