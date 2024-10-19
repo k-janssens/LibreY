@@ -1,6 +1,10 @@
 <?php require_once "locale/localization.php";
       $GLOBALS["opts"] = require_once "config.php";
+      $nonce = base64_encode(random_bytes(16));
  ?>
+
+<?php header("Content-Security-Policy: script-src 'self' 'nonce-$nonce';"); ?>
+
 <!DOCTYPE html >
 <html lang="en">
     <head>
@@ -11,3 +15,6 @@
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="static/css/google.css">
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
+
+        
+        
