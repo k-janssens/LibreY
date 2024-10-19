@@ -1,9 +1,6 @@
 <?php require_once "locale/localization.php";
       $GLOBALS["opts"] = require_once "config.php";
-      $nonce = base64_encode(random_bytes(16));
  ?>
-
-<?php header("Content-Security-Policy: script-src 'self' 'nonce-$nonce';"); ?>
 
 <!DOCTYPE html >
 <html lang="en">
