@@ -27,7 +27,7 @@ function getGoogleAutocompleteSuggestions($query) {
     $convertedString = mb_convert_encoding($decodedString, 'UTF-8', 'UTF-8');
 
     // Step 2: Decode JSON
-    $array = json_decode($decodedString, true);
+    $array = json_decode($convertedString, true);
 
     // Check for errors
     if (json_last_error() !== JSON_ERROR_NONE) {
