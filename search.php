@@ -6,7 +6,7 @@
 
     $opts = load_opts();
 
-    time_options = ['Any time', 'Past 24 hours', 'Past week', 'Past month', 'Past year'];
+    $time_options = ['Any time', 'Past 24 hours', 'Past week', 'Past month', 'Past year'];
     $selected__time_option = isset($_POST['time_period']) ? $_POST['time_period'] : 'Any time';
     
     <form method=
@@ -84,7 +84,6 @@
                         echo "<a " . (($category_index == $opts->type) ? "class=\"active\" " : "") . "href=\"./search.php?q=" . urlencode($opts->query) . "&p=0&t=" . $category_index . "\"><img src=\"static/images/" . $category . "_result.png\" alt=\"" . $category . " result\" />" . TEXTS["category_$category"]  . "</a>";
                     }
                 ?>
-                <label for="time_period">Time Period:</label>
                 <select name="time_period" id="time_period" onchange="this.form.submit()>
                 <?php foreach ($time_options as $time_option): ?>
                     <option value="<?= $option ?>" <?= ($selected__time_option == $time_option) ? 'selected' : '' ?>>
