@@ -89,7 +89,7 @@
                         echo "<a " . (($category_index == $opts->type) ? "class=\"active\" " : "") . "href=\"./search.php?q=" . urlencode($opts->query) . "&p=0&t=" . $category_index . "\"><img src=\"static/images/" . $category . "_result.png\" alt=\"" . $category . " result\" />" . TEXTS["category_$category"]  . "</a>";
                     }
                 ?>
-                <select name="time_period" id="time_period" onchange="this.form.submit()>
+                <select name="time_period" id="time_period" onchange="this.form.submit()">
                 <?php 
                     foreach ($time_options as $time_option_id => $time_option_name) {
                         $selected = $selected_time_option == $time_option_id ? 'selected' : '';
