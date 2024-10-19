@@ -166,6 +166,12 @@ a:hover,
     margin: 25px;
 }
 
+#results {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .logomobile {
     position: absolute;
     margin-top: 0px;
