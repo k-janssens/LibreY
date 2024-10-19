@@ -334,6 +334,10 @@ a:hover,
     color: var(--result-fg);
 }
 
+.text-result-wrapper span {
+    padding-top: 10px;
+}
+
 .video-img {
     height: 115px;
     border-radius: 12px;
