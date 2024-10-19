@@ -13,7 +13,7 @@ function getGoogleAutocompleteSuggestions($query) {
     $response = curl_exec($ch);
     curl_close($ch);
 
-    echo $response;
+    $response = substr($response, 19, -1);
 
     if ($response === false) {
         return []; // Return empty array if there was an error
