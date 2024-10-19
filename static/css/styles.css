@@ -74,7 +74,13 @@ a,
     font-size: 24px !important;
 }
 
-
+.dropdown {
+    background-color: white;
+    border: 1px solid #dfe1e5;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+    margin-top: -1px;
+}
 
 .sub-search-button-wrapper .active {
     border-bottom: 2px #70757a solid;
