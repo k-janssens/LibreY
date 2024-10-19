@@ -8,7 +8,7 @@
 
     $time_options = [
         'a' => 'Any time', 
-        'h' => 'Past 24 hours', 
+        'h' => 'Past day', 
         'w' => 'Past week', 
         'm' => 'Past month', 
         'y' => 'Past year'
