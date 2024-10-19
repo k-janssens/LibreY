@@ -171,6 +171,9 @@ a:hover,
     border-radius: 20px;
     box-shadow: 0 0 20px lightgrey;
     background-color: #ffffff;
+    padding: 15px;
+    width: 50px;
+    font-weight: bold;
 }
 
 .page_button_selected {
