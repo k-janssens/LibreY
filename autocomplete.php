@@ -40,13 +40,20 @@ function getGoogleAutocompleteSuggestions($query) {
     }
 }
 
+function cleanString($string) {
+    // Decode HTML entities
+    $string = html_entity_decode($string);
+    // Remove special characters using regex (allowing letters, numbers, and spaces)
+    return preg_replace('/[^a-zA-Z0-9\s]/', '', $string);
+}
+
 // Example usage
 $query = isset($_REQUEST['query']) ? $_REQUEST['query'] : '';
 $complete = getGoogleAutocompleteSuggestions($query);
 
 foreach ($complete as $item) {
     $suggestion = $item[0];
-    $search = htmlspecialchars($suggestion);
+    $search = cleanString($suggestion);
     echo "<a href=\"/search.php?q=$search\">$suggestion</a><br>";
     
 }
