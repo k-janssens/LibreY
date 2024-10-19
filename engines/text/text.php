@@ -179,7 +179,7 @@
                 echo "<a rel=\"noreferer noopener\"  href=\"$url\">";
                 echo "<h2>$title</h2>";
                 echo "<span>$base_url</span>";
-                echo "</a><br>";
+                echo "</a><hr>";
                 echo "<span>$description</span>";
                 echo "</div>";
             }
