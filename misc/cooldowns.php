@@ -25,8 +25,8 @@
     }
     
     function has_cached_results($url) {
-        if (function_exists("apcu_exists"))
-            return apcu_exists("cached:$url");
+        //if (function_exists("apcu_exists"))
+        //    return apcu_exists("cached:$url");
 
         return false;
     }

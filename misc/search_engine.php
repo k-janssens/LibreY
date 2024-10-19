@@ -31,8 +31,8 @@
         }
 
         public function successful() {
-            return (isset($this->ch) && curl_getinfo($this->ch)['http_code'] == '200') 
-                || has_cached_results($this->url);
+            return (isset($this->ch) && curl_getinfo($this->ch)['http_code'] == '200'); 
+                //|| has_cached_results($this->url);
         }
 
         abstract function parse_results($response);
@@ -41,8 +41,8 @@
             if (!isset($this->url))
                 return $this->parse_results(null);
 
-            if ($this->DO_CACHING && has_cached_results($this->url))
-                return fetch_cached_results($this->url);
+            //if ($this->DO_CACHING && has_cached_results($this->url))
+            //    return fetch_cached_results($this->url);
 
             if (!isset($this->ch))
                 return $this->parse_results(null);
@@ -50,8 +50,8 @@
             $response = $this->mh ? curl_multi_getcontent($this->ch) : curl_exec($this->ch);
             $results = $this->parse_results($response) ?? array();
 
-            if ($this->DO_CACHING && !empty($results))
-                store_cached_results($this->url, $results, $this->opts->cache_time * 60);
+            //if ($this->DO_CACHING && !empty($results))
+            //    store_cached_results($this->url, $results, $this->opts->cache_time * 60);
 
             return $results;
         }

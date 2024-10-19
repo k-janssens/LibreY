@@ -22,8 +22,8 @@
             if (substr($this->query, 0, 1) == "!" || substr($last_word_query, 0, 1) == "!")
                 check_ddg_bang($this->query, $opts);
 
-            if (has_cached_results($this->cache_key))
-                return;
+            //if (has_cached_results($this->cache_key))
+            //    return;
 
             if ($this->engine == "auto")
                 $this->engine = $this->select_engine();
@@ -93,8 +93,8 @@
         }
 
         public function parse_results($response) {
-            if (has_cached_results($this->cache_key))
-                return fetch_cached_results($this->cache_key);
+            //if (has_cached_results($this->cache_key))
+            //    return fetch_cached_results($this->cache_key);
 
             if (!isset($this->engine_request))
                 return array();
@@ -114,7 +114,7 @@
 
             if (!empty($results)) {
                 $results["results_source"] = parse_url($this->engine_request->url)["host"];
-                store_cached_results($this->cache_key, $results);
+                //store_cached_results($this->cache_key, $results);
             }
 
             return $results;
