@@ -12,6 +12,7 @@ function getGoogleAutocompleteSuggestions($url) {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
+    echo "response::".$response;
     curl_close($ch);
 
     if ($response === false) {
@@ -22,8 +23,12 @@ function getGoogleAutocompleteSuggestions($url) {
     // Example of response: google.ac.h(a, b) => [suggestions]
     $json = preg_replace('/^.+?\((.+)\);?$/', '$1', $response);
 
+    echo "json::".$json;
+
     // Decode the JSON
     $data = json_decode($json, true);
+
+    echo "data::".$data;
 
     if ($data === null) {
         return []; // Return empty array if JSON decoding failed
