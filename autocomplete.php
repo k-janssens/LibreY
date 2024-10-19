@@ -53,7 +53,7 @@ $complete = getGoogleAutocompleteSuggestions($query);
 
 foreach ($complete as $item) {
     $suggestion = $item[0];
-    $search = cleanString($suggestion);
+    $search = strip_tags($suggestion);
     echo "<a href=\"/search.php?q=$search\">$suggestion</a><br>";
     
 }
