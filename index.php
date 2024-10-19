@@ -28,7 +28,7 @@
             $('#search').on('input', function() {
                 var query = $(this).val();
 
-                if (query.length > 3) {
+                if (query.length > 0) {
                     $.ajax({
                         url: 'autocomplete.php', // The URL to the PHP file that processes the search
                         type: 'GET',
