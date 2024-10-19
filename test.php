@@ -17,7 +17,7 @@ function getGoogleAutocompleteSuggestions($query) {
     curl_close($ch);
 
     $response = substr($response, 19, -1);
-    echo $response;
+    //echo $response;
    
     if ($response === false) {
         return [];
@@ -30,7 +30,7 @@ function getGoogleAutocompleteSuggestions($query) {
 
     // Check for errors
     if (json_last_error() !== JSON_ERROR_NONE) {
-        //echo 'Error decoding JSON: ' . json_last_error_msg();
+        echo 'Error decoding JSON: ' . json_last_error_msg();
         return [];
     } else {
         // Successfully decoded, print the array
