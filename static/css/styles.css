@@ -187,6 +187,11 @@ a:hover,
 
 }
 
+#results img {
+    width: 16px;
+    padding-top: 2px;
+}
+
 #results a,
 #results a:visited {
     color: var(--search-container-text-color);
