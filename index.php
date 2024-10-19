@@ -26,9 +26,9 @@
         <script>
         $(document).ready(function() {
             $('#search').on('focus', function() {
-                if(window.innerWidth <= 750) {
-                    $('#logo').html(data).hide();
-                }
+              //  if(window.innerWidth <= 750) {
+                    $('#logo').hide();
+              //  }
             });
 
             $('#search').on('input', function() {
