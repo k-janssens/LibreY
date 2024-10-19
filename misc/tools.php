@@ -116,7 +116,7 @@
         }
 
     function print_next_page_button($current_page, $text, $page, $query, $type) {
-        $class = "page_button" . ($current_page == $page ? '_selected' : '');
+        $class = "page_button" . ($current_page == $text ? '_selected' : '');
         echo "<form class=\"page\" action=\"search.php\" target=\"_top\" method=\"get\" autocomplete=\"off\">";
         echo "<input type=\"hidden\" name=\"p\" value=\"" . $page . "\" />";
         echo "<input type=\"hidden\" name=\"q\" value=\"$query\" />";
