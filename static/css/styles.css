@@ -335,7 +335,8 @@ a:hover,
 }
 
 .text-result-wrapper hr {
-    border-top: 0px solid;
+    border: none;
+    margin: 6px;
 }
 
 .video-img {
