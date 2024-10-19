@@ -20,32 +20,23 @@ function getGoogleAutocompleteSuggestions($query) {
         return []; // Return empty array if there was an error
     }
 
-    // Strip out the JSONP function wrapper
-   // $json = preg_replace('/^.+?\((.+)\);?$/', '$1', $response);
+    $decodedString = html_entity_decode($jsonString);
 
-    // Decode the JSON response
-    $data = json_decode($json, true);
-    echo $data;
+    // Step 2: Decode JSON
+    $array = json_decode($decodedString, true);
 
-    if ($data === null) {
-        return []; // Return empty array if JSON decoding failed
+    // Check for errors
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        echo 'Error decoding JSON: ' . json_last_error_msg();
+    } else {
+        // Successfully decoded, print the array
+        print_r($array);
     }
-
-    // Assuming suggestions are in the first element of the array
-    return isset($data[1]) ? $data[1] : [];
 }
 
 // Example usage
 $query = isset($_REQUEST['query']) ? $_REQUEST['query'] : '';
-$suggestions = getGoogleAutocompleteSuggestions($query);
+getGoogleAutocompleteSuggestions($query);
 
-// Display the suggestions
-if (!empty($suggestions)) {
-    echo "Suggestions for '$query':\n";
-    foreach ($suggestions as $suggestion) {
-        echo "- " . htmlspecialchars($suggestion) . "\n";
-    }
-} else {
-    echo "No suggestions found.\n";
-}
+
 ?>
