@@ -46,7 +46,8 @@ $complete = getGoogleAutocompleteSuggestions($query);
 
 foreach ($complete as $item) {
     $suggestion = $item[0];
-    echo "Suggestion: " . $suggestion . "<br>";
+    $search = htmlspecialchars($suggestion);
+    echo "<a href=\"/search.php?q=$search\">$suggestion</a><br>";
     
 }
 
