@@ -177,7 +177,8 @@ a:hover,
 }
 
 .page_button_selected {
-    background-color: #ff0000;
+    background-color: #aeaeae !important;
+    color: white !important
 }
 
 #results {
