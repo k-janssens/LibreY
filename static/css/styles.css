@@ -101,7 +101,7 @@ a:hover,
     background-color: #ffffff;
     padding: 10px;
     padding-left: 30px;
-    font-size: inherit;
+    font-size: 22px;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
     border-radius: 50px;
@@ -115,7 +115,7 @@ a:hover,
     background-color: #ffffff;
     padding: 10px;
     padding-left: 30px;
-    font-size: inherit;
+    font-size: 22px;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
     border-radius: 50px;
@@ -522,7 +522,7 @@ hr.small-line {
         float: none;
         margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: auto;
+        margin-left: -20px;
         margin-right: auto;
         padding: 10px;
         font-size: 28px;
@@ -532,10 +532,10 @@ hr.small-line {
     }
 
     .sub-search-container input {
-        width: 80%;
+        width: 65%;
         position: relative;
-        left: 0px;
-        margin-top: 0px;
+        left: 34px;
+        margin-top: 18px;
     }
 
     .sub-search-button-wrapper {
