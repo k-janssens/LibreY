@@ -7,7 +7,7 @@
     $opts = load_opts();
 
     $time_options = ['Any time', 'Past 24 hours', 'Past week', 'Past month', 'Past year'];
-    $selected_time_option = isset($_REQUEST['time_period']) ? $_REQUEST['time_period'] : 'Any time';
+   // $selected_time_option = isset($_REQUEST['time_period']) ? $_REQUEST['time_period'] : 'Any time';
     
     <form method=
     function print_page_buttons($type, $query, $page) {
@@ -84,9 +84,7 @@
                         echo "<a " . (($category_index == $opts->type) ? "class=\"active\" " : "") . "href=\"./search.php?q=" . urlencode($opts->query) . "&p=0&t=" . $category_index . "\"><img src=\"static/images/" . $category . "_result.png\" alt=\"" . $category . " result\" />" . TEXTS["category_$category"]  . "</a>";
                     }
                 ?>
-                <select name="time_period" id="time_period" onchange="this.form.submit()>
-              
-                </select>
+                
             </div>
         </form>
 
