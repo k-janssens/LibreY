@@ -5,7 +5,7 @@
     </head>
     <body>
         <form class="search-container" action="search.php" method="get" autocomplete="off">
-                <h1 id="logo">
+                <h1 id="google_logo">
                     <span class="google-logo-g1">G</span><span class="google-logo-o1">o</span><span class="google-logo-o2">o</span><span class="google-logo-g2">g</span><span class="google-logo-l">l</span><span class="google-logo-e">e</span>
                 </h1>
                 <!--img src="/static/images/search.png" class="icon"-->
@@ -26,9 +26,9 @@
         <script>
         $(document).ready(function() {
             $('#search').on('focus', function() {
-              //  if(window.innerWidth <= 750) {
-                    $('#logo').hide();
-              //  }
+                if(window.innerWidth <= 750) {
+                    $('#google_logo').hide();
+                }
             });
 
             $('#search').on('input', function() {
