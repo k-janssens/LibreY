@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 function getGoogleAutocompleteSuggestions($query) {
     // Encode the query to make it URL-safe
     $query = urlencode($query);
@@ -20,7 +23,7 @@ function getGoogleAutocompleteSuggestions($query) {
         return []; // Return empty array if there was an error
     }
 
-    $decodedString = html_entity_decode($jsonString);
+    $decodedString = html_entity_decode($response);
 
     // Step 2: Decode JSON
     $array = json_decode($decodedString, true);
