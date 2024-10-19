@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="static/css/google.css">
         <link title="<?php printtext("page_title"); ?>" type="application/opensearchdescription+xml" href="opensearch.xml?method=POST" rel="search"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         
         
