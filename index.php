@@ -21,7 +21,7 @@
                 </div>
         </form>
 
-        <div id="results"></div>
+        <div id="results" style="display: none;"></div>
 
         <script>
         $(document).ready(function() {
