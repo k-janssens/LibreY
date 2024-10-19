@@ -181,6 +181,10 @@ a:hover,
     border-radius: 20px;
     box-shadow: 0 0 20px lightgrey;
     line-height: 1.5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
 #results a,
@@ -541,6 +545,10 @@ hr.small-line {
     .sub-search-container .logo {
         display: none;
 
+    }
+
+    #results {
+        max-width: 70%;
     }
 
     .logomobile {
