@@ -16,7 +16,7 @@ function getGoogleAutocompleteSuggestions($query) {
     $response = curl_exec($ch);
     curl_close($ch);
 
-    echo $response;
+    //echo $response;
 
     $response = substr($response, 19, -1);
    
@@ -36,7 +36,7 @@ function getGoogleAutocompleteSuggestions($query) {
     } else {
         // Successfully decoded, print the array
         print_r($array);
-        return $array[0];
+        return $array;
     }
 }
 
