@@ -168,9 +168,9 @@ a:hover,
 
 #results {
     max-width: 500px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-
     color: var(--search-container-text-color);
     background-color: #ffffff;
     padding: 10px;
@@ -178,9 +178,12 @@ a:hover,
     font-size: 22px;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);
-    border-radius: 50px;
-    height: 35px;
+    border-radius: 20px;
     box-shadow: 0 0 20px lightgrey;
+}
+
+#results a a:visited {
+    color: #140DAB;
 }
 
 .logomobile {
