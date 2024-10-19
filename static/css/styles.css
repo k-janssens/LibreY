@@ -182,7 +182,8 @@ a:hover,
     box-shadow: 0 0 20px lightgrey;
 }
 
-#results a a:visited {
+#results a,
+#results a:visited {
     color: #140DAB;
 }
 
