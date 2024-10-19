@@ -35,8 +35,8 @@ function getGoogleAutocompleteSuggestions($query) {
         return [];
     } else {
         // Successfully decoded, print the array
-        //print_r($array);
-         return $array[0];
+        print_r($array);
+        return $array[0];
     }
 }
 
