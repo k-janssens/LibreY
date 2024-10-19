@@ -14,16 +14,18 @@ function getGoogleAutocompleteSuggestions($query) {
     curl_close($ch);
 
     $response = substr($response, 19, -1);
+    echo $response;
 
     if ($response === false) {
         return []; // Return empty array if there was an error
     }
 
     // Strip out the JSONP function wrapper
-    $json = preg_replace('/^.+?\((.+)\);?$/', '$1', $response);
+   // $json = preg_replace('/^.+?\((.+)\);?$/', '$1', $response);
 
     // Decode the JSON response
     $data = json_decode($json, true);
+    echo $data;
 
     if ($data === null) {
         return []; // Return empty array if JSON decoding failed
