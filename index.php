@@ -29,7 +29,7 @@
                 if(window.innerWidth <= 750) {
                     $('#logo').html(data).hide();
                 }
-            };
+            });
 
             $('#search').on('input', function() {
                 var query = $(this).val();
