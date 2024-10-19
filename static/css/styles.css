@@ -334,7 +334,7 @@ a:hover,
     color: var(--result-fg);
 }
 
-.text-result-wrapper span {
+.text-result-wrapper br {
     padding-top: 10px;
 }
 
