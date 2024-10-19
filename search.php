@@ -26,8 +26,8 @@
             //}
 
             //for ($i = $page / 10; $page / 10 + 10 > $i; $i++)
-            for ($i = 1; $i <= 10; $i++) {
-                print_next_page_button($page, $i, $query, $type);
+            for ($i = 1; $page / 10 + 10 > $i; $i++) {
+                print_next_page_button($page, $i + 1, $i * 10, $query, $type);
             }
 
             //print_next_page_button($page, "Next", $page + 10, $query, $type);

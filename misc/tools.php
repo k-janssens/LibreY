@@ -115,10 +115,10 @@
             echo "<p id=\"time\">Fetched the results in $end_time seconds$source</p>";
         }
 
-    function print_next_page_button($current_page, $page, $query, $type) {
+    function print_next_page_button($current_page, $text, $page, $query, $type) {
         $class = "page_button" . ($current_page == $page ? '_selected' : '');
         echo "<form class=\"page\" action=\"search.php\" target=\"_top\" method=\"get\" autocomplete=\"off\">";
-        echo "<input type=\"hidden\" name=\"p\" value=\"" . ($page * 10) . "\" />";
+        echo "<input type=\"hidden\" name=\"p\" value=\"" . $page . "\" />";
         echo "<input type=\"hidden\" name=\"q\" value=\"$query\" />";
         echo "<input type=\"hidden\" name=\"t\" value=\"$type\" />";
         echo "<button class=\"$class\" type=\"submit\">$text</button>";
