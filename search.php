@@ -41,7 +41,7 @@
     ?> - <?php printtext("page_title");?></title>
 </head>
     <body>
-        <form class="sub-search-container" method="get" autocomplete="off">
+        <form id="searchForm" class="sub-search-container" method="get" autocomplete="off">
             <h1 class="logomobile">
                 <a class="no-decoration" href="./">
                 <div id="container">
@@ -89,7 +89,7 @@
                         echo "<a " . (($category_index == $opts->type) ? "class=\"active\" " : "") . "href=\"./search.php?q=" . urlencode($opts->query) . "&p=0&t=" . $category_index . "\"><img src=\"static/images/" . $category . "_result.png\" alt=\"" . $category . " result\" />" . TEXTS["category_$category"]  . "</a>";
                     }
                 ?>
-                <select name="time_period" id="time_period" onchange="this.form.submit()">
+                <select name="time_period" id="time_period">
                 <?php 
                     foreach ($time_options as $time_option_id => $time_option_name) {
                         $selected = $selected_time_option == $time_option_id ? 'selected' : '';
@@ -99,6 +99,12 @@
                 </select>
             </div>
         </form>
+        
+        <script>
+        document.getElementById('time_period').addEventListener('change', function() {
+            document.getElementById('searchForm').submit();
+        });
+        </script>
 
         <?php
             fetch_search_results($opts, true);
