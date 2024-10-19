@@ -121,7 +121,7 @@
         echo "<input type=\"hidden\" name=\"p\" value=\"" . ($page * 10) . "\" />";
         echo "<input type=\"hidden\" name=\"q\" value=\"$query\" />";
         echo "<input type=\"hidden\" name=\"t\" value=\"$type\" />";
-        echo "<button class= \"$class\"type=\"submit\">$text</button>";
+        echo "<button class=\"$class\" type=\"submit\">$text</button>";
         echo "</form>";
     }
 
