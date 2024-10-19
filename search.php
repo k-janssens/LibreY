@@ -84,11 +84,12 @@
                     }
                 ?>
                 <select name="time_period" id="time_period" onchange="this.form.submit()>
-                <?php foreach ($time_options as $time_option): ?>
-                    <option value="<?= $time_option ?>" <?= ($selected_time_option == $time_option) ? 'selected' : '' ?>>
-                        <?= $time_option ?>
-                    </option>
-                <?php endforeach; ?>
+                <?php 
+                    foreach ($time_options as $time_option) {
+                        $selected = $selected_time_option == $time_option ? 'selected' : '';
+                        echo "<option value=\"$time_option\" $selected>$time_option</option>";  
+                    }
+                ?>
                 </select>
             </div>
         </form>
