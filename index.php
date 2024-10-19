@@ -9,7 +9,7 @@
                     <span class="google-logo-g1">G</span><span class="google-logo-o1">o</span><span class="google-logo-o2">o</span><span class="google-logo-g2">g</span><span class="google-logo-l">l</span><span class="google-logo-e">e</span>
                 </h1>
                 <!--img src="/static/images/search.png" class="icon"-->
-                <input type="text" name="q" autofocus/>
+                <input type="text" name="q" autofocus id="search" />
                 <input type="hidden" name="p" value="0"/>
                 <input type="hidden" name="t" value="0"/>
                 <input type="submit" class="hide"/>
@@ -20,5 +20,31 @@
                 } ?>
                 </div>
         </form>
+
+        <div id="results"></div>
+
+        <script>
+        $(document).ready(function() {
+            $('#search').on('input', function() {
+                var query = $(this).val();
+
+                if (query.length > 3) {
+                    $.ajax({
+                        url: 'autocomplete.php', // The URL to the PHP file that processes the search
+                        type: 'GET',
+                        data: { query: query },
+                        success: function(data) {
+                            $('#results').html(data).show(); // Populate results and show the div
+                        },
+                        error: function() {
+                            $('#results').html('<p>Error retrieving results.</p>').show();
+                        }
+                    });
+                } else {
+                    $('#results').hide(); // Hide results if the input is empty
+                }
+            });
+        });
+        </script>
 
 <?php require_once "misc/footer.php"; ?>
