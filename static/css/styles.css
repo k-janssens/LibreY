@@ -326,7 +326,7 @@ a:hover,
 .text-result-wrapper {
     max-width: 550px;
     word-wrap: break-word;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .text-result-wrapper a {
@@ -334,8 +334,8 @@ a:hover,
     color: var(--result-fg);
 }
 
-.text-result-wrapper br {
-    padding-top: 10px;
+.text-result-wrapper hr {
+    color: red;
 }
 
 .video-img {
