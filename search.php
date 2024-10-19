@@ -6,8 +6,14 @@
 
     $opts = load_opts();
 
-    $time_options = ['Any time', 'Past 24 hours', 'Past week', 'Past month', 'Past year'];
-    $selected_time_option = isset($_REQUEST['time_period']) ? $_REQUEST['time_period'] : 'Any time';
+    $time_options = [
+        'a' => 'Any time', 
+        'h' => 'Past 24 hours', 
+        'w' => 'Past week', 
+        'm' => 'Past month', 
+        'y' => 'Past year'
+    ];
+    $selected_time_option = isset($_REQUEST['time_period']) ? $_REQUEST['time_period'] : 'a';
     
     function print_page_buttons($type, $query, $page) {
         if ($type > 1)
@@ -85,9 +91,9 @@
                 ?>
                 <select name="time_period" id="time_period" onchange="this.form.submit()>
                 <?php 
-                    foreach ($time_options as $time_option) {
-                        $selected = $selected_time_option == $time_option ? 'selected' : '';
-                        echo "<option value=\"$time_option\" $selected>$time_option</option>";  
+                    foreach ($time_options as $time_option_id => $time_option_name) {
+                        $selected = $selected_time_option == $time_option_id ? 'selected' : '';
+                        echo "<option value=\"$time_option_id\" $selected>$time_option_name</option>";  
                     }
                 ?>
                 </select>
