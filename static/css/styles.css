@@ -335,7 +335,7 @@ a:hover,
 }
 
 .text-result-wrapper hr {
-    color: red;
+    border-top: 0px solid;
 }
 
 .video-img {
