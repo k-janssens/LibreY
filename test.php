@@ -1,7 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 
 function getGoogleAutocompleteSuggestions($query) {
     // Encode the query to make it URL-safe
@@ -17,8 +17,7 @@ function getGoogleAutocompleteSuggestions($query) {
     curl_close($ch);
 
     $response = substr($response, 19, -1);
-    echo $response;
-
+   
     if ($response === false) {
         return [];
     }
@@ -44,24 +43,9 @@ $query = isset($_REQUEST['query']) ? $_REQUEST['query'] : '';
 $complete = getGoogleAutocompleteSuggestions($query);
 
 foreach ($complete as $item) {
-    // Access the first element, which is the suggestion
     $suggestion = $item[0];
-    // Access the count (the second element)
-    $count = $item[1];
-    // Access the IDs (the third element)
-    $ids = $item[2];
-    // Access additional details (the fourth element)
-    $details = $item[3];
-
-    // Output the suggestion and details
-    echo "Suggestion: " . htmlspecialchars($suggestion) . "<br>";
-    echo "Count: " . $count . "<br>";
-    echo "IDs: " . implode(", ", $ids) . "<br>";
-    echo "Details:<br>";
-    echo "- Name: " . htmlspecialchars($details['zh']) . "<br>";
-    echo "- Company: " . htmlspecialchars($details['zi']) . "<br>";
-    echo "- gs_ssp: " . htmlspecialchars($details['zp']['gs_ssp']) . "<br>";
-    echo "<br>"; // Just for better separation in output
+    echo "Suggestion: " . $suggestion . "<br>";
+    
 }
 
 ?>
