@@ -79,6 +79,7 @@ a,
     background-color: #ffffff00;
     border: 0px;
     font-size: 14px;
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
 }
@@ -213,6 +214,7 @@ a:hover,
 
 #results div {
     width: 80%;
+    cursor: pointer;
 }
 
 #results span {
