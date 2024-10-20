@@ -141,31 +141,30 @@
 
     function fetch_search_results($opts, $do_print) {
         $opts->cooldowns = load_cooldowns();
-        $x=0;
-        echo $x++;
         $start_time = microtime(true);
         $mh = curl_multi_init();
         $search_category = init_search($opts, $mh);
-        echo $x++;
+
         $running = null;
-        echo $x++;
+
         do {
             curl_multi_exec($mh, $running);
         } while ($running);
-        echo $x++;
+
         $results = $search_category->get_results();
-        echo $x++;
+        print_r($results);
+
         if (empty($results)) {
             require_once "engines/librex/fallback.php";
             $results = get_librex_results($opts);
         }
-        echo $x++;
+
         if (!$do_print || empty($results))
             return $results;
-            echo $x++;
-        print_elapsed_time($start_time, $results, $opts);
+
+            print_elapsed_time($start_time, $results, $opts);
         $search_category->print_results($results, $opts);
-        echo $x++;
+
         return $results;
     }
 ?>
