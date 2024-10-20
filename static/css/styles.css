@@ -208,6 +208,10 @@ a:hover,
     position: absolute;
 }
 
+#results div {
+    width: 80%;
+}    
+
 #results a,
 #results a:visited {
     color: var(--search-container-text-color);
@@ -533,7 +537,9 @@ hr.small-line {
     }
 
     .search-container input {
-        width: 70%;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: 0 0 8px lightgrey;
     }
 
     .search-button-wrapper button {
@@ -575,7 +581,9 @@ hr.small-line {
     }
 
     #results {
-        max-width: 70%;
+        max-width: 100%;
+        border-radius: 0px;
+        margin-top: 0px;
     }
 
     .logomobile {
@@ -638,11 +646,15 @@ hr.small-line {
     }
 
     .search-container h1 {
+        visibility: hidden;
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
         font-size: 55px;
     }
 
     .search-container {
-        margin-top: 10%;
+        margin-top: 0px;
     }
 
     .text-result-container,
