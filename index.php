@@ -27,10 +27,8 @@
         <script>
         $(document).ready(function() {
             $('#clear').on('click', function() {
-                if(window.innerWidth <= 750) {
-                    $('#search').value='';
-                    $('#search').focus();
-                }
+                $('#search').val('');
+                $('#search').focus();
             });
 
             $('#search').on('input', function() {
