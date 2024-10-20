@@ -640,7 +640,7 @@ hr.small-line {
     #search_results {
         width: -webkit-fill-available;
         border-radius: 0px;
-        margin-top: 0px;
+        margin-top: -50px;
         margin-left: 0px;
     }
 
