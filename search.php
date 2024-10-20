@@ -43,7 +43,7 @@
 </head>
     <body>
         <form id="searchForm" class="sub-search-container" method="get" autocomplete="off">
-            <h1 class="logomobile">
+            <h1 class="logomobile" id="logomobile">
                 <a class="no-decoration" href="./">
                 <div id="container">
                     <div id="logo">
