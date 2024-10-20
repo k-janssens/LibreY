@@ -67,6 +67,7 @@
                     echo "value=\"" . htmlspecialchars($opts->query) . "\"";
                 ?>
             >
+            <div id="results" style="display: none;"></div>
             <hr>
             <?php
                 echo "<button class=\"hide\" name=\"t\" value=\"$opts->type\"/></button>";
@@ -104,6 +105,29 @@
         <script>
         document.getElementById('time_period').addEventListener('change', function() {
             document.getElementById('searchForm').submit();
+        });
+        
+        $(document).ready(function() {
+            $('#search').on('input', function() {
+                var query = $(this).val();
+
+                if (query.length > 0) {
+                    $('#clear').show();
+                    $.ajax({
+                        url: 'autocomplete.php', // The URL to the PHP file that processes the search
+                        type: 'GET',
+                        data: { query: query },
+                        success: function(data) {
+                            $('#results').html(data).show(); // Populate results and show the div
+                        },
+                        error: function() {
+                            $('#results').html('<p>Error retrieving results.</p>').show();
+                        }
+                    });
+                } else {
+                    $('#results').hide(); // Hide results if the input is empty
+                }
+            });
         });
         </script>
 
