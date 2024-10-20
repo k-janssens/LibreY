@@ -617,7 +617,10 @@ hr.small-line {
 
     .sub-search-container .logo {
         display: none;
+    }
 
+    .search_focused {
+        maring-lef: 0px;        
     }
 
     #results {
