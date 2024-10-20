@@ -106,14 +106,6 @@
         document.getElementById('time_period').addEventListener('change', function() {
             document.getElementById('searchForm').submit();
         });
-        
-        $(document).ready(function() {
-            $('#search').on('focus', search());
-            $('#search').on('input', search());
-            $('#search').on('blur', function() {
-               $('#results').hide();
-            });
-        });
 
         function search() {
             var query = $(this).val();
@@ -121,7 +113,7 @@
             if (query.length > 0) {
                 $('#clear').show();
                 $.ajax({
-                    url: 'autocomplete.php', // The URL to the PHP file that processes the search
+                    url: 'autocomplete.php',
                     type: 'GET',
                     data: { query: query },
                     success: function(data) {
@@ -132,9 +124,17 @@
                     }
                 });
             } else {
-                $('#results').hide(); // Hide results if the input is empty
+                $('#results').hide();
             }
         }
+        
+        $(document).ready(function() {
+            $('#search').on('focus', search());
+            $('#search').on('input', search());
+            $('#search').on('blur', function() {
+               $('#results').hide();
+            });
+        });
         </script>
 
         <?php
