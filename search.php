@@ -132,7 +132,8 @@
             $('#search').on('focus', function() { search($(this).val()) });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-               $('#results').hide();
+                var results = $('#results');
+                setTimeout(function() { results.hide(); }, 100);
             });
         });
         </script>
