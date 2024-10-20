@@ -117,14 +117,14 @@
                     type: 'GET',
                     data: { query: query },
                     success: function(data) {
-                        $('#results').html(data).show(); // Populate results and show the div
+                        $('#search_results').html(data).show(); // Populate results and show the div
                     },
                     error: function() {
-                        $('#results').html('<p>Error retrieving results.</p>').show();
+                        $('#search_results').html('<p>Error retrieving results.</p>').show();
                     }
                 });
             } else {
-                $('#results').hide();
+                $('#search_results').hide();
             }
         }
         
@@ -132,7 +132,7 @@
             $('#search').on('focus', function() { search($(this).val()) });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-                var results = $('#results');
+                var results = $('#search_results');
                 setTimeout(function() { results.hide(); }, 500);
             });
         });
