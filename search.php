@@ -130,12 +130,12 @@
         
         $(document).ready(function() {
             $('#search').on('focus', function() { 
-                $(this).classList.add('search_focused');
+                $(this).addClass('search_focused');
                 search($(this).val()) 
             });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-                $(this).classList.remove('search_focused');
+                $(this).removeClass('search_focused');
                 var results = $('#search_results');
                 //setTimeout(function() { results.hide(); }, 500);
             });
