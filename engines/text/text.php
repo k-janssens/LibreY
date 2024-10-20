@@ -29,20 +29,14 @@
                 $this->engine = $this->select_engine();
 
             // no engine was selected
-            if (is_null($this->engine)) {
-                echo "NO ENGINE!!!";
+            if (is_null($this->engine))
                 return;
-            }
 
             // this only happens if a specific engine was selected, not if auto is used
-            if (has_cooldown($this->engine, $this->opts->cooldowns)) {
-                echo "COOLDOWN!!!";
+            if (has_cooldown($this->engine, $this->opts->cooldowns))
                 return;
-            }
 
             $this->engine_request = $this->get_engine_request($this->engine, $opts, $mh);
-
-            echo $this->engine_request;
 
             if (is_null($this->engine_request))
                 return;
