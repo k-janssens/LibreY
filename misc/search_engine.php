@@ -133,27 +133,6 @@
                 require_once "engines/invidious/video.php";
                 return new VideoSearch($opts, $mh);
 
-            case 3:
-                if ($opts->disable_bittorrent_search) {
-                    echo "<p class=\"text-result-container\">" . TEXTS["feature_disabled"] . "</p>";
-                    break;
-                }
-
-                require_once "engines/bittorrent/merge.php";
-                return new TorrentSearch($opts, $mh);
-
-            case 4:
-                if ($opts->disable_hidden_service_search) {
-                    echo "<p class=\"text-result-container\">" . TEXTS["feature_disabled"] . "</p>";
-                    break;
-                }
-                require_once "engines/ahmia/hidden_service.php";
-                return new TorSearch($opts, $mh);
-
-            case 5:
-                require_once "engines/maps/openstreetmap.php";
-                return new OSMRequest($opts, $mh);
-
             default:
                 require_once "engines/text/text.php";
                 return new TextSearch($opts, $mh);

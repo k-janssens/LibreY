@@ -1,6 +1,6 @@
 <?php
     function get_engines() {
-        return array("google", "duckduckgo", "brave", "yandex", "ecosia", "mojeek");
+        return array("google");
     }
 
     class TextSearch extends EngineRequest {

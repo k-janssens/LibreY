@@ -21,6 +21,7 @@
     }
 
     function has_cooldown($instance, $cooldowns) {
+        echo ($cooldowns[$instance] ?? 0) > time();
         return ($cooldowns[$instance] ?? 0) > time();
     }
     
