@@ -137,7 +137,9 @@
         
         $(document).ready(function() {
             $('#search').on('focus', function() { 
-                $('#logomobile').addClass('hide');
+                if($(window).width() <= 750) {
+                    $('#logomobile').addClass('hide');
+                }
                 $(this).addClass('search_focused');
                 $('#clear').show();
                 search($(this).val()) 
