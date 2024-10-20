@@ -583,7 +583,8 @@ hr.small-line {
         width: 80%;
     }
 
-    .search-container #clear {
+    .search-container #clear,
+    .sub-search-container #clear {
         left: 82%;
         padding-top: 8px;
     }
