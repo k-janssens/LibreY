@@ -108,9 +108,19 @@
             document.getElementById('searchForm').submit();
         });
 
+        $(document).on('keydown', function(event) {
+            if (event.key == "Escape") {
+                $('#clear').click();
+            }
+        });
+
         $('#clear').on('click', function() {
             //$('#search').val('');
-            $('#search').blur();
+            //$('#search').blur();
+            //$('#clear').hide();
+            $('#logomobile').removeClass('hide');
+            $('#search').removeClass('search_focused');
+            $('#search_results').hide();
             $('#clear').hide();
         });
 
@@ -145,13 +155,13 @@
                 search($(this).val()) 
             });
             $('#search').on('input', function() { search($(this).val()) });
-            $('#search').on('blur', function() {
-                $('#logomobile').removeClass('hide');
-                $(this).removeClass('search_focused');
-                var results = $('#search_results');
-                $('#clear').hide();
-                setTimeout(function() { results.hide(); }, 500);
-            });
+            //$('#search').on('blur', function() {
+            //    $('#logomobile').removeClass('hide');
+            //    $(this).removeClass('search_focused');
+            //    var results = $('#search_results');
+            //    $('#clear').hide();
+            //    setTimeout(function() { results.hide(); }, 500);
+            //});
         });
         </script>
 
