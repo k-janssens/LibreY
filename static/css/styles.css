@@ -104,6 +104,7 @@ a:hover,
 }
 
 .search-container #clear {
+    cursor: pointer;
     font-size: 40px;
     color: lightgrey;
     position: absolute;
@@ -567,7 +568,7 @@ hr.small-line {
     }
 
     .search-container #clear {
-        left: 80%;
+        left: 82%;
         padding-top: 8px;
     }
 
