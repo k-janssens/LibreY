@@ -108,27 +108,33 @@
         });
         
         $(document).ready(function() {
-            $('#search').on('input', function() {
-                var query = $(this).val();
-
-                if (query.length > 0) {
-                    $('#clear').show();
-                    $.ajax({
-                        url: 'autocomplete.php', // The URL to the PHP file that processes the search
-                        type: 'GET',
-                        data: { query: query },
-                        success: function(data) {
-                            $('#results').html(data).show(); // Populate results and show the div
-                        },
-                        error: function() {
-                            $('#results').html('<p>Error retrieving results.</p>').show();
-                        }
-                    });
-                } else {
-                    $('#results').hide(); // Hide results if the input is empty
-                }
+            $('#search').on('focus', search($(this).val()));
+            $('#search').on('input', search($(this).val()));
+            $('#search').on('blur', function() {
+               $('#results').hide();
             });
         });
+
+        function search(query) {
+            //var query = $(this).val();
+
+            if (query.length > 0) {
+                $('#clear').show();
+                $.ajax({
+                    url: 'autocomplete.php', // The URL to the PHP file that processes the search
+                    type: 'GET',
+                    data: { query: query },
+                    success: function(data) {
+                        $('#results').html(data).show(); // Populate results and show the div
+                    },
+                    error: function() {
+                        $('#results').html('<p>Error retrieving results.</p>').show();
+                    }
+                });
+            } else {
+                $('#results').hide(); // Hide results if the input is empty
+            }
+        }
         </script>
 
         <?php
