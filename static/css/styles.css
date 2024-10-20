@@ -127,6 +127,7 @@ a:hover,
 }
 
 .sub-search-container input {
+    z-index: 10;
     width: 500px;
     color: var(--search-container-text-color);
     background-color: #ffffff;
@@ -212,8 +213,15 @@ a:hover,
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-
 }
+
+#search_results {
+    margin-top: -65px;
+    margin-left: 165px;
+    position: absolute;
+    max-width: 600px;
+    width: 600px;
+}   
 
 #results img,
 #search_results img {
