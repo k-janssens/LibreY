@@ -132,7 +132,7 @@ a:hover,
     color: var(--search-container-text-color);
     background-color: #ffffff;
     padding: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     font-size: 22px;
     font-family: sans-serif;
     border: 0px solid var(--search-container-background-border);

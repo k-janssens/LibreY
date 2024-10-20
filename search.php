@@ -26,7 +26,7 @@
             //}
 
             //for ($i = $page / 10; $page / 10 + 10 > $i; $i++)
-            for ($i = 0; $i < 10; $i++) {
+            for ($i = 0; $i < 5; $i++) {
                 print_next_page_button($page, $i + 1, $i * 10, $query, $type);
             }
 
@@ -56,6 +56,7 @@
                 </div>
                 </a>
             </h1>
+            <i class="material-icons" id="clear" style="display: none;">highlight_off</i>            
             <input type="text" name="q" id="search" 
                 <?php
                     if (1 > strlen($opts->query) || strlen($opts->query) > 256)
@@ -107,6 +108,13 @@
             document.getElementById('searchForm').submit();
         });
 
+        $('#clear').on('click', function() {
+            //$('#search').val('');
+            $('#results').hide();
+            $('#search').focus();
+            $('#clear').hide();
+        });
+
         function search(query) {
             //var query = $(this).val();
 
@@ -132,6 +140,7 @@
             $('#search').on('focus', function() { 
                 $('#logomobile').addClass('hide');
                 $(this).addClass('search_focused');
+                $('#clear').show();
                 search($(this).val()) 
             });
             $('#search').on('input', function() { search($(this).val()) });
@@ -139,6 +148,7 @@
                 //$('#logomobile').removeClass('hide');
                 //$(this).removeClass('search_focused');
                 var results = $('#search_results');
+                $('#clear').hide();
                 //setTimeout(function() { results.hide(); }, 500);
             });
         });
