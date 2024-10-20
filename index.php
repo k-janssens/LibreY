@@ -26,11 +26,12 @@
 
         <script>
         $(document).ready(function() {
-            //$('#search').on('focus', function() {
-            //    if(window.innerWidth <= 750) {
-            //        $('#google_logo').hide();
-            //    }
-            //});
+            $('#clear').on('click', function() {
+                if(window.innerWidth <= 750) {
+                    $('#search').value='';
+                    $('#search').focus();
+                }
+            });
 
             $('#search').on('input', function() {
                 var query = $(this).val();
