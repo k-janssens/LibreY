@@ -141,7 +141,7 @@
 
     function fetch_search_results($opts, $do_print) {
         $opts->cooldowns = load_cooldowns();
-var x=0;
+        $x=0;
         echo x++;
         $start_time = microtime(true);
         $mh = curl_multi_init();
