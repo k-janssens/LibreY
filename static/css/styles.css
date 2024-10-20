@@ -197,6 +197,7 @@ a:hover,
 
 #results,
 #search_results {
+    z-index: 5;
     max-width: 500px;
     margin-top: 20px;
     margin-left: auto;
@@ -349,6 +350,7 @@ a:hover,
 }
 
 .special-result-container {
+    z-index: 1;
     padding: 10px;
     border: 1px solid var(--special-result-border);
     width: 500px;
