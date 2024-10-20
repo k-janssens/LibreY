@@ -212,7 +212,7 @@ a:hover,
     width: 80%;
 }
 
-#results spa {
+#results span {
     color: var(--search-container-text-color);
     padding-left: 30px;
 }    
