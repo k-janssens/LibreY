@@ -135,7 +135,7 @@
             });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-                $(this).removeClass('search_focused');
+                //$(this).removeClass('search_focused');
                 var results = $('#search_results');
                 //setTimeout(function() { results.hide(); }, 500);
             });
