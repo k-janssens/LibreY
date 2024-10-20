@@ -112,7 +112,7 @@
             }
 
             $end_time = number_format(microtime(true) - $start_time, 2, '.', '');
-            echo "<p id=\"time\">Fetched the results in $end_time seconds$source</p>";
+            //echo "<p id=\"time\">Fetched the results in $end_time seconds$source</p>";
         }
 
     function print_next_page_button($current_page, $text, $page, $query, $type) {
