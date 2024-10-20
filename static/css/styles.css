@@ -687,10 +687,11 @@ hr.small-line {
     }
 
     .sub-search-container input {
-        width: 68%;
+        width: 62%;
         position: relative;
         padding-left: 46px;
         margin-top: 18px;
+        left: 38px;
     }
 
     .sub-search-button-wrapper {
