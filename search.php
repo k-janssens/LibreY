@@ -56,6 +56,7 @@
                 </div>
                 </a>
             </h1>
+            <i class="material-icons" id="search_icon">search</i>
             <i class="material-icons" id="clear" style="display: none;">arrow_back</i>            
             <input type="text" name="q" id="search" 
                 <?php
