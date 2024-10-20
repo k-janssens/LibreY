@@ -624,10 +624,10 @@ hr.small-line {
     }
 
     .search_focused {
-        left: 0px;
-        width: -webkit-fill-available;
-        border-radius: 0px;
-        box-shadow: 0 0 8px lightgrey;
+        left: 0px !important;
+        width: -webkit-fill-available !important;
+        border-radius: 0px !important;
+        box-shadow: 0 0 8px lightgrey !important;
     }
 
     #results {
