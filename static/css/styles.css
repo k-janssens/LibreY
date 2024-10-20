@@ -619,6 +619,10 @@ hr.small-line {
         display: none;
     }
 
+    .hide {
+        display: none !important;
+    }
+
     .search_focused {
         margin-left: 0px;        
     }
