@@ -103,7 +103,8 @@ a:hover,
     font-size: 70px;
 }
 
-.search-container #clear {
+.search-container #clear,
+.sub-search-container #clear {
     cursor: pointer;
     font-size: 40px;
     color: lightgrey;
