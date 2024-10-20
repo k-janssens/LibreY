@@ -130,14 +130,16 @@
         
         $(document).ready(function() {
             $('#search').on('focus', function() { 
+                $('#logomobile').hide();
                 $(this).addClass('search_focused');
                 search($(this).val()) 
             });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-                //$(this).removeClass('search_focused');
+                $('#logomobile').show();
+                $(this).removeClass('search_focused');
                 var results = $('#search_results');
-                //setTimeout(function() { results.hide(); }, 500);
+                setTimeout(function() { results.hide(); }, 500);
             });
         });
         </script>
