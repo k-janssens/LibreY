@@ -56,7 +56,7 @@
                 </div>
                 </a>
             </h1>
-            <input type="text" name="q"
+            <input type="text" name="q" id="search" 
                 <?php
                     if (1 > strlen($opts->query) || strlen($opts->query) > 256)
                     {
