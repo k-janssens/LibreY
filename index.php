@@ -37,7 +37,7 @@
                 var query = $(this).val();
 
                 if (query.length > 0) {
-                    if($(window).width() <= 750) {
+                    if($(window).width() > 750) {
                         $('#search').addClass('search_focused');
                     }
 
