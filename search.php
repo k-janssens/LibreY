@@ -110,8 +110,7 @@
 
         $('#clear').on('click', function() {
             //$('#search').val('');
-            $('#results').hide();
-            $('#search').focus();
+            $('#search').blur();
             $('#clear').hide();
         });
 
@@ -145,11 +144,11 @@
             });
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
-                //$('#logomobile').removeClass('hide');
-                //$(this).removeClass('search_focused');
+                $('#logomobile').removeClass('hide');
+                $(this).removeClass('search_focused');
                 var results = $('#search_results');
                 $('#clear').hide();
-                //setTimeout(function() { results.hide(); }, 500);
+                setTimeout(function() { results.hide(); }, 500);
             });
         });
         </script>
