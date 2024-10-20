@@ -37,6 +37,10 @@
                 var query = $(this).val();
 
                 if (query.length > 0) {
+                    if($(window).width() <= 750) {
+                        $('#search').addClass('search_focused');
+                    }
+
                     $('#clear').show();
                     $.ajax({
                         url: 'autocomplete.php', // The URL to the PHP file that processes the search
@@ -53,6 +57,10 @@
                     $('#results').hide(); // Hide results if the input is empty
                 }
             });
+        });
+
+        $('#search').on('blur', function() {
+            $('#search').removeClass('search_focused');
         });
         </script>
 
