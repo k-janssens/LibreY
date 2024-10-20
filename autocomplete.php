@@ -55,7 +55,7 @@ foreach ($complete as $item) {
     $suggestion = $item[0];
     $search = strip_tags($suggestion);
     //echo "<img src=\"static/images/search.png\"> <a href=\"/search.php?q=$search\">$suggestion</a><br>";
-    echo "<div onclick=\"location.href='search.php?q=$search';\"><img src=\"static/images/search.png\"> $suggestion<div>";
+    echo "<div onclick=\"location.href='search.php?q=$search';\"><img src=\"static/images/search.png\"><span>$suggestion</span></div>";
     
 }
 

@@ -210,6 +210,11 @@ a:hover,
 
 #results div {
     width: 80%;
+}
+
+#results spa {
+    color: var(--search-container-text-color);
+    padding-left: 30px;
 }    
 
 #results a,
