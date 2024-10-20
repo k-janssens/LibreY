@@ -1,8 +1,8 @@
 <?php require_once "locale/localization.php";
       $GLOBALS["opts"] = require_once "config.php";
 
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    //error_reporting(E_ALL);
+    //ini_set('display_errors', 1);
  ?>
 
 <!DOCTYPE html >
