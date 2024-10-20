@@ -32,6 +32,7 @@
                 $('#results').hide();
                 $('#search').focus();
                 $('#clear').hide();
+                $('#search').removeClass('search_focused');
             });
 
             $('#search').on('input', function() {

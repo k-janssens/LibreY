@@ -108,18 +108,18 @@ a:hover,
     font-size: 32px;
     color: lightgrey;
     position: absolute;
-    left: 34%;
+    left: 33%;
     padding-top: 12px;
 }
 
 .search-container #clear,
 .sub-search-container #clear {
     cursor: pointer;
-    font-size: 40px;
+    font-size: 32px;
     color: lightgrey;
     position: absolute;
-    left: 64%;
-    padding-top: 8px;
+    left: 65%;
+    padding-top: 12px;
 }
 
 .search-container input {
@@ -596,10 +596,19 @@ hr.small-line {
         width: 80%;
     }
 
-    .search-container #clear,
+    .search-container #search_icon,
+    .sub-search-container #search_icon {
+        left: 2%;
+    }
+
+    .search-container #clear {
+        left: 90%;
+        z-index: 20;
+    }
+
     .sub-search-container #clear {
-        left: 82%;
-        padding-top: 8px;
+        left: 2%;
+        color: blue;
         z-index: 20;
     }
 
