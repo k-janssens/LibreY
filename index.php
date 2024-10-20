@@ -9,6 +9,7 @@
                     <span class="google-logo-g1">G</span><span class="google-logo-o1">o</span><span class="google-logo-o2">o</span><span class="google-logo-g2">g</span><span class="google-logo-l">l</span><span class="google-logo-e">e</span>
                 </h1>
                 <!--img src="/static/images/search.png" class="icon"-->
+                <i class="material-icons" id="search_icon">search</i>
                 <i class="material-icons" id="clear" style="display: none;">highlight_off</i>
                 <input type="text" name="q" id="search" autofocus />
                 <input type="hidden" name="p" value="0"/>
@@ -61,6 +62,12 @@
 
         $('#search').on('blur', function() {
             $('#search').removeClass('search_focused');
+        });
+
+        $(document).on('keydown', function(event) {
+            if (event.key == "Escape") {
+                $('#clear').click();
+            }
         });
         </script>
 

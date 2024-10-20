@@ -103,13 +103,22 @@ a:hover,
     font-size: 70px;
 }
 
+.search-container #search_icon,
+.sub-search-container #search_icon {
+    font-size: 40px;
+    color: lightgrey;
+    position: absolute;
+    left: 2%;
+    padding-top: 8px;
+}
+
 .search-container #clear,
 .sub-search-container #clear {
     cursor: pointer;
     font-size: 40px;
     color: lightgrey;
     position: absolute;
-    left: 62%;
+    left: 64%;
     padding-top: 8px;
 }
 
