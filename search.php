@@ -133,7 +133,7 @@
             $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
                 var results = $('#search_results');
-                setTimeout(function() { results.hide(); }, 500);
+                //setTimeout(function() { results.hide(); }, 500);
             });
         });
         </script>
