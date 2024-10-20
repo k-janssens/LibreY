@@ -55,7 +55,8 @@
                         }
                     });
                 } else {
-                    $('#results').hide(); // Hide results if the input is empty
+                    $('#results').hide();
+                    $('#search').removeClass('search_focused');
                 }
             });
         });
