@@ -28,6 +28,7 @@
         $(document).ready(function() {
             $('#clear').on('click', function() {
                 $('#search').val('');
+                $('#results').hide();
                 $('#search').focus();
             });
 

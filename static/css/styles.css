@@ -599,7 +599,7 @@ hr.small-line {
     }
 
     #results {
-        max-width: 100%;
+        width: -webkit-fill-available;
         border-radius: 0px;
         margin-top: 0px;
     }
