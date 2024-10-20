@@ -107,8 +107,8 @@
             document.getElementById('searchForm').submit();
         });
 
-        function search() {
-            var query = $(this).val();
+        function search(query) {
+            //var query = $(this).val();
 
             if (query.length > 0) {
                 $('#clear').show();
@@ -129,8 +129,8 @@
         }
         
         $(document).ready(function() {
-            $('#search').on('focus', search());
-            $('#search').on('input', search());
+            $('#search').on('focus', function() { search($(this).val()) });
+            $('#search').on('input', function() { search($(this).val()) });
             $('#search').on('blur', function() {
                $('#results').hide();
             });
