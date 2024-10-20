@@ -107,8 +107,8 @@ a:hover,
     font-size: 40px;
     color: lightgrey;
     position: absolute;
-    left: 56%;
-    padding-top: 7px;
+    left: 62%;
+    padding-top: 8px;
 }
 
 .search-container input {
@@ -564,6 +564,11 @@ hr.small-line {
         display: table-row;
         margin: 30px 0px 0px 0px;
         width: 80%;
+    }
+
+    .search-container #clear {
+        left: 80%;
+        padding-top: 8px;
     }
 
     .image-result-container {
