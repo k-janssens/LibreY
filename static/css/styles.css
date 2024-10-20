@@ -103,13 +103,20 @@ a:hover,
     font-size: 70px;
 }
 
-.search-container #search_icon,
-.sub-search-container #search_icon {
+.search-container #search_icon {
     font-size: 32px;
     color: lightgrey;
     position: absolute;
     left: 33%;
     padding-top: 12px;
+}
+
+.sub-search-container #search_icon {
+    font-size: 32px;
+    color: lightgrey;
+    position: absolute;
+    left: 11%;
+    padding-top: 36px;
 }
 
 .search-container #clear,
@@ -181,6 +188,7 @@ a:hover,
     width: 100%;
     border-bottom: 1px solid var(--border);
     margin-bottom: 26px;
+    padding-left: 40px;
 }
 
 .sub-search-container hr {
