@@ -624,13 +624,17 @@ hr.small-line {
         width: -webkit-fill-available;
         border-radius: 0px;
         margin-top: 0px;
+        margin-top: -38px;
     }
 
     #search_results {
         width: -webkit-fill-available;
         border-radius: 0px;
         margin-top: 0px;
+        margin-left: 0px;
     }
+
+
 
     .logomobile {
         position: absolute;
