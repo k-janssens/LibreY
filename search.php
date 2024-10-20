@@ -148,7 +148,7 @@
                 $(this).removeClass('search_focused');
                 var results = $('#search_results');
                 $('#clear').hide();
-                setTimeout(function() { results.hide(); }, 500);
+                setTimeout(function() { results.hide(); }, 200);
             });
         });
         </script>
