@@ -30,12 +30,14 @@
                 $('#search').val('');
                 $('#results').hide();
                 $('#search').focus();
+                $('#clear').hide();
             });
 
             $('#search').on('input', function() {
                 var query = $(this).val();
 
                 if (query.length > 0) {
+                    $('#clear').show();
                     $.ajax({
                         url: 'autocomplete.php', // The URL to the PHP file that processes the search
                         type: 'GET',
