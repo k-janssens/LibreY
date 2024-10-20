@@ -627,7 +627,8 @@ hr.small-line {
         left: 0px !important;
         width: -webkit-fill-available !important;
         border-radius: 0px !important;
-        box-shadow: 0 0 8px lightgrey !important;
+        box-shadow: 0 0 0px lightgrey !important;
+        margin: 0px !important;
     }
 
     #results {
@@ -640,8 +641,9 @@ hr.small-line {
     #search_results {
         width: -webkit-fill-available;
         border-radius: 0px;
-        margin-top: -50px;
+        margin-top: -45px;
         margin-left: 0px;
+        text-align: left;
     }
 
 
