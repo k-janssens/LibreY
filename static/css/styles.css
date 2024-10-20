@@ -104,8 +104,11 @@ a:hover,
 }
 
 .search-container #clear {
-    font-size: 16px;
-    color:red;
+    font-size: 50px;
+    color: lightgrey;
+    position: absolute;
+    padding-left: 85%;
+    padding-top: 2px;
 }
 
 .search-container input {
@@ -552,7 +555,7 @@ hr.small-line {
     }
 
     .search-container input {
-        width: 100%;
+        width: -webkit-fill-available;
         border-radius: 0px;
         box-shadow: 0 0 8px lightgrey;
     }
