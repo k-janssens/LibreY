@@ -67,7 +67,7 @@
                     echo "value=\"" . htmlspecialchars($opts->query) . "\"";
                 ?>
             >
-            <div id="results" style="display: none;"></div>
+            <div id="search_results" style="display: none;"></div>
             <hr>
             <?php
                 echo "<button class=\"hide\" name=\"t\" value=\"$opts->type\"/></button>";
