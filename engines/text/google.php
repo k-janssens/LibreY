@@ -34,6 +34,7 @@
 
 
         public function parse_results($response) {
+            echo $response;
             $results = array();
             $xpath = get_xpath($response);
 
