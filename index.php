@@ -9,7 +9,7 @@
                     <span class="google-logo-g1">G</span><span class="google-logo-o1">o</span><span class="google-logo-o2">o</span><span class="google-logo-g2">g</span><span class="google-logo-l">l</span><span class="google-logo-e">e</span>
                 </h1>
                 <!--img src="/static/images/search.png" class="icon"-->
-                <i class="fa fa-close" id="clear" />
+                <i class="fa fa-close" id="clear"></i>
                 <input type="text" name="q" id="search" autofocus />
                 <input type="hidden" name="p" value="0"/>
                 <input type="hidden" name="t" value="0"/>
