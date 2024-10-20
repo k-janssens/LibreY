@@ -103,6 +103,11 @@ a:hover,
     font-size: 70px;
 }
 
+.search-container #clear {
+    font-size: 16px;
+    color:red;
+}
+
 .search-container input {
     width: 500px;
     color: var(--search-container-text-color);
