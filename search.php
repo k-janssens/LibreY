@@ -122,6 +122,7 @@
             $('#logomobile').removeClass('hide');
             $('#search').removeClass('search_focused');
             $('#search_results').hide();
+            $('#search_icon').show();
             $('#clear').hide();
         });
 
@@ -130,6 +131,7 @@
 
             if (query.length > 0) {
                 $('#clear').show();
+                $('#search_icon').hide();
                 $.ajax({
                     url: 'autocomplete.php',
                     type: 'GET',
@@ -153,6 +155,7 @@
                 }
                 $(this).addClass('search_focused');
                 $('#clear').show();
+                $('#search_icon').hide();
                 search($(this).val()) 
             });
             $('#search').on('input', function() { search($(this).val()) });

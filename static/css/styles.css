@@ -597,7 +597,12 @@ hr.small-line {
         width: 80%;
     }
 
-    .search-container #search_icon,
+    .search-container #search_icon {
+        left: 23%;
+        z-index: 50;
+        top: 17px;
+    }
+
     .sub-search-container #search_icon {
         left: 2%;
     }
