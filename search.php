@@ -56,7 +56,7 @@
                 </div>
                 </a>
             </h1>
-            <i class="material-icons" id="clear" style="display: none;">highlight_off</i>            
+            <i class="material-icons" id="clear" style="display: none;">keyboard_backspace</i>            
             <input type="text" name="q" id="search" 
                 <?php
                     if (1 > strlen($opts->query) || strlen($opts->query) > 256)
@@ -150,7 +150,7 @@
                 $(this).removeClass('search_focused');
                 var results = $('#search_results');
                 $('#clear').hide();
-                setTimeout(function() { results.hide(); }, 200);
+                setTimeout(function() { results.hide(); }, 500);
             });
         });
         </script>
