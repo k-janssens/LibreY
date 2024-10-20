@@ -598,13 +598,13 @@ hr.small-line {
     }
 
     .search-container #search_icon {
-        left: 23%;
-        z-index: 50;
-        top: 17px;
+        left: 2%;
     }
 
     .sub-search-container #search_icon {
-        left: 2%;
+        left: 23%;
+        z-index: 50;
+        top: 17px;
     }
 
     .search-container #clear {
