@@ -108,15 +108,15 @@
         });
         
         $(document).ready(function() {
-            $('#search').on('focus', search($(this).val()));
-            $('#search').on('input', search($(this).val()));
+            $('#search').on('focus', search());
+            $('#search').on('input', search());
             $('#search').on('blur', function() {
                $('#results').hide();
             });
         });
 
-        function search(query) {
-            //var query = $(this).val();
+        function search() {
+            var query = $(this).val();
 
             if (query.length > 0) {
                 $('#clear').show();
