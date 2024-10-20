@@ -21,15 +21,15 @@
     }
 
     function load_instances($cooldowns) {
-        $instances_json = json_decode(file_get_contents("instances.json"), true);
+        //$instances_json = json_decode(file_get_contents("instances.json"), true);
 
-        if (empty($instances_json["instances"]))
-            return array();
+        //if (empty($instances_json["instances"]))
+        return array();
 
-        $instances = array_map(fn($n) => $n['clearnet'], array_filter($instances_json['instances'], fn($n) => !is_null($n['clearnet'])));
-        $instances = array_filter($instances, fn($n) => !has_cooldown($n, $cooldowns));
-        shuffle($instances);
-        return $instances;
+        //$instances = array_map(fn($n) => $n['clearnet'], array_filter($instances_json['instances'], fn($n) => !is_null($n['clearnet'])));
+        //$instances = array_filter($instances, fn($n) => !has_cooldown($n, $cooldowns));
+        //shuffle($instances);
+        //return $instances;
     }
 
     function get_librex_results($opts) {
